@@ -48,12 +48,15 @@ The project also contains a disassembled version of the PRIMO ROM in Ghidra (htt
 ## Screenshots
 
 Startup screen:
+
 ![](figures/screenshot-1.png)
 
 Centipede by Gabor Paller 1988.
+
 ![](figures/screenshot-2.png)
 
 Hamm:
+
 ![](figures/screenshot-3.png)
 
 
