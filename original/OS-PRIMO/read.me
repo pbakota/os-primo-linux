@@ -1,0 +1,96 @@
+JOCO's Open-Source PRIMO. Beta version, not 100% tested! For educational 
+purposes only! 
+
+
+(C) Jozsef Laszlo 2004, 
+E-mail: joco@szabolcs.net
+WEB:    http://joco.homeserver.hu
+
+
+This is a FREEWARE software. You can use it, modify it, make it better, but 
+please, DO NOT sell it. If you do this, you are a thief.
+
+REMEMBER! It's not 100% tested, the whole project is just my "hobby". I do not 
+guarantee anything. I am not responsible in case this software does any
+damage in your system. Use at your own risk! Use it as is!
+
+
+** COMPILE **
+
+* You need to compile the Z80 CPU emulator in the Z80 folder. For this
+please read the read.me file in the Z80 folder. The CPU core emulator is 
+written in NASM assembly.
+
+* You need the GNU C compiler. As this software is a DOS program, use the 
+DJGPP compiler. See the page http://www.delorie.com/djgpp/ 
+Although the target platform is DOS, the compiler will work in fullsize 
+DOS window on Windows 9x/2000/NT/XP as well. The compiled program
+(os-primo.exe) is a DOS proetced mode program, so you need a DPMI host 
+driver (cwsdpmi*) in DOS mode. In windows dos window, it will work just like
+any native application. 
+
+* Please download the required NASM and DJGPP distribution, install them. 
+  Just follow the instructions in the readme/install files. 
+
+* Once you have a working NASM/DJGPP, compile the CPU core emulator, and
+  copy the z80main.o file to this folder. Then type "f.bat". If everything 
+  goes rigth, you'll get the "os-primo.exe" file. Done.
+
+** USING THE EMULATOR **
+
+* You need PRI files which contain PRIMO program. Try 
+  http://primo.homeserver.hu for download some games.
+
+for example:
+
+  C:\work>os-primo.exe		- starts the emulator
+  C:\work\os-primo.exe pri/vili.pri
+  C:\work\os-primo.exe hamm.pri	- starts the emulator, then loads the
+				  hamm.pri file. Basic PRI files are not
+				  'autostarted'. (type RUN if needed)
+
+
+** KEYBOARD **
+
+  Very basic. 
+   	F11 :  RESET the emulator
+        ESC :  Quit
+        Other keys work as a normal (Hungarian) PRIMO keyboard. 
+	See the keytab.h for some special keys.
+
+** TAPE SUPPORT **
+
+  No tape support. Don't use the LOAD/SAVE basic commands. Won't work.
+
+** TESTING RESULTS/BUGS  **
+
+  I have tested the emulator with some old games. The following are worked:
+	HAMM, KELJFEL, VILI, CENTIPIED, ORDOGMOT, PEEPSHOW
+
+   Sound is not perferct at all. I am not saying that this emulator is 
+   perfect. There must be some missing/bad parts in the CPU core emulator
+   as well as in the PRIMO emulator. I wrote this example just for fun.
+   I wrote it and I publish it for you to learn something about emulation.
+   HAVE FUN.
+
+   Drop me a mail if you like it. 
+
+   cheers
+    
+     joco
+
+  [ Jozsef Laszlo, joco@szabolcs.net, http://joco.homeserver.hu ]
+
+** LINKS: **
+
+http://primo.homeserver.hu 	primo homepage
+http://joco.homeserver.hu 	my homepage
+http://www.delorie.com/djgpp 	DJGPP (GNU C for DOS) compiler
+http://nasm.sourceforge.net	NASM assembler compiler
+
+
+
+
+
+
+
