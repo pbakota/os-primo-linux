@@ -12,6 +12,7 @@ The emulation core is based on Marat Fayzullin's Z80 CPU emulator. The emulator 
 
 The emulator uses SDL2 library for graphics and user interaction, therefore the source code should be reasonably portable. There is only support for .PRI files, and the emulator can only read them and start them automatically (depends on the save mode).
 
+DISCLAIMER: The project is in pre-alpha version, there are a lot of bugs, use it at your own risk.
 
 ### Build
 
